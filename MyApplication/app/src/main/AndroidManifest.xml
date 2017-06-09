@@ -7,18 +7,22 @@
         android:icon="@mipmap/ic_launcher"
         android:label="Arma tu Equipo"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Login">
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+        <activity android:name=".Activities.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".PrincipalActivity" />
-        <activity android:name=".SelectionActivity" />
-        <activity android:name=".ABMPlayerActivity"></activity>
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.PrincipalActivity" />
+        <activity android:name=".Activities.SelectionActivity" />
+        <activity android:name=".Activities.ABMPlayerActivity" />
+        <activity
+            android:name=".Activities.SwipeActivity"
+            android:label="@string/title_activity_swipe"
+            android:theme="@style/NoActionBar"></activity>
     </application>
 
 </manifest>

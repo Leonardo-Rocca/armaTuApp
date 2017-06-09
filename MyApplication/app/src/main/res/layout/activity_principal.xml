@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.lrocca.myapplication.PrincipalActivity"
+    tools:context="com.example.lrocca.myapplication.Activities.PrincipalActivity"
     android:background="@drawable/cesped3">
 
     <Button
@@ -22,7 +22,7 @@
         android:textSize="24sp"
         android:layout_below="@+id/button3"
         android:layout_centerHorizontal="true"
-        android:onClick="seleccion" />
+        android:onClick="selection" />
 
     <Button
         android:text="Cargar Jugadores"
@@ -34,5 +34,17 @@
         android:textStyle="normal|bold"
         android:textSize="24sp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="loadPlayers"
+        android:elevation="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:drawableTop="@drawable/ic_build_black_18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="configuration"
+        android:visibility="visible" />
 </RelativeLayout>

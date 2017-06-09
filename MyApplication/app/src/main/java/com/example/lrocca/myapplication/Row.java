@@ -1,4 +1,5 @@
 package com.example.lrocca.myapplication;
+import com.example.lrocca.myapplication.modelo.Jugador;
 
 /**
  * Created by lrocca on 24/04/2017.
@@ -10,7 +11,7 @@ package com.example.lrocca.myapplication;
 
         private String subtitle;
 
-        private boolean checked;
+        private boolean checked=false;
         private Jugador player;
 
         public String getTitle()
@@ -56,4 +57,5 @@ package com.example.lrocca.myapplication;
         public Jugador getPlayer() {
             return player;
         }
+
     }
