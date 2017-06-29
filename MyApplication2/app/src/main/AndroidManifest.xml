@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lrocca.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Arma tu Equipo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+        <activity android:name=".Activities.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.PrincipalActivity" />
+        <activity android:name=".Activities.SelectionActivity" />
+        <activity android:name=".Activities.ABMPlayerActivity" />
+        <activity
+            android:name=".Activities.SwipeActivity"
+            android:label="@string/title_activity_swipe"
+            android:theme="@style/NoActionBar"></activity>
+    </application>
+
+</manifest>

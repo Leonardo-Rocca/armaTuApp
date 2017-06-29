@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content"
+    tools:context="com.example.lrocca.myapplication.Slide.ScreenSlidePageFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvIndex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textIsSelectable="false"
+            android:textSize="36sp"
+            android:text="Texto"
+            android:textColor="@android:color/background_light" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view_group"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            android:layout_alignParentTop="true"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="18dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:paddingBottom="18dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dp"
+            tools:listitem="@layout/row_recycle"
+            android:layout_weight="0.98" />
+
+        <ImageView
+            android:layout_width="367dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/back0"
+            android:id="@+id/imageView" />
+
+        <Button
+            android:text="Guardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button5"
+            android:layout_weight="1.04"
+            android:onClick="saveGroup" />
+    </LinearLayout>
+
+</FrameLayout>
