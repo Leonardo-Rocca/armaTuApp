@@ -94,15 +94,7 @@ public class SelectionActivity extends AppCompatActivity implements AdapterView.
     }
 
     private ArrayList<Jugador> selectedPlayers() {
-        return this.rowsChecked();
-    }
-
-    public ArrayList<Jugador> rowsChecked() {
-        ArrayList<Jugador> j = new ArrayList<Jugador>();
-        for (int i = 0; i < rows.size(); i++) {
-            if(rows.get(i).isChecked()) j.add(rows.get(i).getPlayer());
-        }
-        return j;
+        return new RowsController().rowsChecked(rows);
     }
 
     public void selectAll (View view) {

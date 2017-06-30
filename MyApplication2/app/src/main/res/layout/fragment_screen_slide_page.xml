@@ -48,9 +48,8 @@
             android:text="Guardar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button5"
-            android:layout_weight="1.04"
-            android:onClick="saveGroup" />
+            android:id="@+id/btnSave"
+            android:layout_weight="1.04" />
     </LinearLayout>
 
 </FrameLayout>

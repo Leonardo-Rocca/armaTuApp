@@ -11,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -79,6 +80,13 @@ public class ScreenSlidePageFragment extends Fragment {
 
         loadGroup(rootView);
 
+        Button btnExec = (Button) rootView.findViewById(R.id.btnSave);
+        btnExec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                saveGroup(v);
+            }
+        });
         // Show the current page index in the view
         TextView tvIndex = (TextView) rootView.findViewById(R.id.tvIndex);
         ImageView img = (ImageView) rootView.findViewById(R.id.imageView);
@@ -132,5 +140,6 @@ public class ScreenSlidePageFragment extends Fragment {
         ArrayList<Jugador> j = rowsController.rowsChecked(rows);
         admin.onlyPersist(j,group.getId());
     }
+
 
 }

@@ -2,7 +2,9 @@ package com.example.lrocca.myapplication.modelo;
 
 import com.example.lrocca.myapplication.Persistencia.FileSystemAdapter;
 
-public class Jugador implements Persistible {
+import java.io.Serializable;
+
+public class Jugador implements Persistible, Serializable {
 	
 	private String name ="no name";
 	private int hability = -1;
@@ -76,5 +78,12 @@ public class Jugador implements Persistible {
 
 	public String getStringHability() {
 		return String.valueOf(getHability());
+	}
+
+//DUMMY
+	public Jugador(String name){
+		setName(name);
+		setHability(100);
+		setId(50);
 	}
 }
